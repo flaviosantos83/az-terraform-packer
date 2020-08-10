@@ -91,7 +91,7 @@ data "azurerm_resource_group" "image" {
 }
 
 data "azurerm_image" "image" {
-  name                = "myPackerImage"
+  name                = "myPackerUbuntu1804"
   resource_group_name = data.azurerm_resource_group.image.name
 }
 
