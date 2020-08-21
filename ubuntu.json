@@ -30,7 +30,7 @@
         "apt-get upgrade -y",
         "apt-get -y install nginx",
         "apt-get -y install git",
-        "cd /var/www/html && git clone https://github.com/flaviosantos83/az-jenkinscicd-terraform.git && mv -f /var/www/html/az-jenkinscicd-terraform /var/www/html",
+        "cd /var/www/html && git clone https://github.com/flaviosantos83/az-jenkinscicd-terraform.git && mv -f /var/www/html/az-jenkinscicd-terraform/* /var/www/html/",
         "/usr/sbin/waagent -force -deprovision+user && export HISTSIZE=0 && sync"
       ],
       "inline_shebang": "/bin/sh -x",
