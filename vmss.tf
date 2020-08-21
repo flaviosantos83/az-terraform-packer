@@ -1,10 +1,10 @@
 provider "azurerm" {
     features {}
     version = "~> 2.22"
-    subscription_id = ""
-    client_id       = ""
-    client_secret   = ""
-    tenant_id       = ""
+    subscription_id = "12037468-f761-4ce3-aa8a-353b1d76c6b4"
+    client_id       = "ccd5ad5a-ddee-43d6-b396-f912b2dd5cf7"
+    client_secret   = "IJ-1PXU0_-TCKDnx_GucGnDjxxwrofnFW7"
+    tenant_id       = "66fc9de7-c475-401c-a2e2-0828300b4aa5"
 }
 
 resource "azurerm_resource_group" "vmss" {
