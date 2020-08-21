@@ -136,8 +136,12 @@ resource "azurerm_virtual_machine_scale_set" "vmss" {
 
     ssh_keys {
       path     = "/home/azureuser/.ssh/authorized_keys"
-      key_data = file("~/.ssh/id_rsa.pub")
+      key_data = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDftoBeLaXEc6WSxXH9fNU3sgMO1cV0sDVsF6LpoWlwBXZXAfsdBXFUdzzwr/8bDYMy6/pNgTHH95cRgUDcxnQvNFXvaw9PP0a6hn0d99nvtBBs+53RwNnLlaxwHdokaJW5eLGxAnSciihrZ2lS9YvjjHq/Cb4Lh+bolUKahLf76U4U0A7SNURKI4QCtiBtmFUEzaX5vQ1aq1SfmU5qPJkKR9ANgRNtU4RMTjhhtk7TvYx/bpLynxbZ7Qsvz6+cSmbMcST+y70IwioNQhH6yfB3/wnQ98p9QWuM6pMhHlguXwSIqvu204vl5mRCsJQ+3Ym0I9mW7NSnDUxDMJxDIaE1 bitnami@jenkins"
     }
+    ssh_keys {
+            path     = "/home/azureuser/.ssh/authorized_keys"
+            key_data = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC5vbxOrgfjiOJqpTgmB0MpllLkwyzNtemexyNWBgXQEH/O6kott44VihFnvMZHLco0NCTN617uFa+VugHoOWBxj0mdsqh/I/vljqbxxGSLfSdUJEkcwxcyQsMDRJP0qFyHBPCpMSmApQyIz1w8tfCpS12177Mc40ihd+OllaMot62xaGk+/cPsXKQbRNOjH1N5UukYO8dGoUOhDAdQAHwtVYPpEDAz/I3a5JHfmTk0Y1OXn16thQLrGsUUv0Mz16fBC7Va0tJR/b62WMHt/JjnSKUiGm4TQ5a3koPMi5UO6ZnoKAy11K85LdN/lUl3xmaPi8FdW3lTtXAAfSnyeVQ/1gh2rPzk5fGS4aJSK/2BxgHkvlxY/Hy2I1BjlUk3jn6ephy8oKZTEOSonwu1+pDOKAvAZpomTVVO2NS7x0GJBR93XJlK91a7PO9yuG3alZaFHPojkQfmzwieG3ZbdrBGjzQ0QIEamLPBsMNVuagtPC7qkyWVo8hJWehfi+8j/aRI3dXC1E3ArNX9SYjV6gF/M2LI5hHIcy8HKSwMWsdkidSseyvKTCfC9Z4M/glnb/yCuzc2TLdrPmO5+m6/p1tLesWXm3CYWIO1nrNmFuzeoLFbGtMsht5d+vWXVWhjqKhE1rqU1OgZ/rUbUSN8Ox/O1y9Oq6UCDaFu65krQb9SyQ== flavio@MacbookAir.local"
+        }
   }
 
   network_profile {
